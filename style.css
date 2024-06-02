@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+  --clr-primary: #c7135b;
+  --clr-white: #fff;
+  --clr-black: #161515;
+  --clr-gold: #e9971c;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s ease;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: var(--clr-black);
+}
+nav{
+    height: 6rem;
+    background: var(--clr-black);
+}
+h1{
+    font-size: 2rem;
+    color: var(--clr-white);
+}
+span{
+    color: var(--clr-primary);
+    font-size: 2rem;
+
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem;
+
+}
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--clr-white);
+    font-weight: 900;
+}
+a:focus{
+    color: var(--clr-primary);
+}
+.icon{
+    display: flex;
+    gap: 2rem;
+}
+#icon1{
+    color: var(--clr-gold);
+    font-size: 2rem;
+}
+#icon2{
+    color:var(--clr-white);
+    font-size: 1.5rem;
+}
+#background_img{
+    width: 100%;
+}
+.box{
+    text-align: center;
+    margin-top: 2rem;
+}
+#input{
+    padding: 12px 15px;
+    border-radius: 5rem;
+    width: 30%;
+    background: transparent;
+    color: var(--clr-white);
+}
+#btn{
+    padding: 8px 10px;
+    background:var(--clr-primary);
+    color: var(--clr-white);
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#btn:hover{
+    background: var(--clr-white);
+    color: var(--clr-black);
+}
+#result{
+    margin-left: 40rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .nav.show-links {
+        display: flex;
+    }
+
+    .header {
+        flex-direction:row;
+        align-items: center;
+    
+    }
+
+    .icon {
+        display: none;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #input {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    #result {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
